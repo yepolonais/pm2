@@ -3,11 +3,11 @@ module.exports = {
     {
       name: "appOne",
       script: "./appOne/appOne.js",
-      watch: true,
+      watch: true, // Reload when a file is modified
       env: {
         NODE_ENV: "development",
       },
-      node_args: "--inspect=localhost:6666",
+      node_args: "--inspect=localhost:6665",
       env_production: {
         NODE_ENV: "production",
       },
@@ -16,11 +16,13 @@ module.exports = {
       name: "appTwo",
       script: "./appTwo/appTwo.js",
       watch: true,
+      node_args: "--inspect=localhost:6666",
     },
     {
       name: "appThree",
       script: "./appThree/appThree.js",
       watch: true,
+      node_args: "--inspect=localhost:6667",
     },
   ],
 

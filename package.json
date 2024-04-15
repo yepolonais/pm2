@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pm2 start ecosystem.config.js",
     "restart": "pm2 restart ecosystem.config.js",
-    "start-debug": "pm2 start ecosystem.config.js --node-args '--inspect=[localhost:9229]' ",
-    "stop" : "pm2 stop ecosystem.config.js"
+    "start-app-debug": "pm2 start ./appOne/appOne.js --node-args '--inspect=localhost:6666'",
+    "stop": "pm2 stop ecosystem.config.js"
   },
   "keywords": [],
   "author": "",
