@@ -1,16 +1,15 @@
 {
   "name": "pm2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test application to explore debugging on vsc with pm2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pm2 start ecosystem.config.js",
     "restart": "pm2 restart ecosystem.config.js",
     "start-app-debug": "pm2 start ./appOne/appOne.js --node-args '--inspect=localhost:6666'",
     "stop": "pm2 stop ecosystem.config.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aurélien FLURA",
   "license": "ISC"
 }
