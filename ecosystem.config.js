@@ -8,6 +8,7 @@ module.exports = {
         NODE_ENV: "development",
       },
       node_args: "--inspect=0.0.0.0:6665",
+      exec_mode: "cluster",
       env_production: {
         NODE_ENV: "production",
       },
@@ -17,12 +18,14 @@ module.exports = {
       script: "./appTwo/appTwo.js",
       watch: true,
       node_args: "--inspect=0.0.0.0:6666",
+      exec_mode: "cluster",
     },
     {
       name: "appThree",
       script: "./appThree/appThree.js",
       watch: true,
       node_args: "--inspect=0.0.0.0:6667",
+      exec_mode: "cluster",
     },
   ],
 
