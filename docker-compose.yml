@@ -6,8 +6,6 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    command: bash -c "npm run start && echo 'PM2 Custom Server up and running' && sleep infinity"
     environment:
       NODE_ENV: production
-    ports:
-      - 9999:80
-      - 6666

@@ -7,7 +7,7 @@ module.exports = {
       env: {
         NODE_ENV: "development",
       },
-      node_args: "--inspect=localhost:6665",
+      node_args: "--inspect=0.0.0.0:6665",
       env_production: {
         NODE_ENV: "production",
       },
@@ -16,13 +16,13 @@ module.exports = {
       name: "appTwo",
       script: "./appTwo/appTwo.js",
       watch: true,
-      node_args: "--inspect=localhost:6666",
+      node_args: "--inspect=0.0.0.0:6666",
     },
     {
       name: "appThree",
       script: "./appThree/appThree.js",
       watch: true,
-      node_args: "--inspect=localhost:6667",
+      node_args: "--inspect=0.0.0.0:6667",
     },
   ],
 

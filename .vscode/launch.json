@@ -5,8 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Attach",
+            "name": "Attach-6666",
             "port": 6666,
+            "remoteRoot": "/usr/src/app",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "restart": true,
+            "type": "node"
+        },
+        {
+            "name": "Attach-6667",
+            "port": 6667,
+            "remoteRoot": "/usr/src/app",
             "request": "attach",
             "skipFiles": [
                 "<node_internals>/**"
