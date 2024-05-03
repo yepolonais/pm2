@@ -7,7 +7,7 @@ module.exports = {
       env: {
         NODE_ENV: "development",
       },
-      node_args: "--inspect=0.0.0.0:6665",
+      node_args: "--inspect",
       exec_mode: "cluster",
       env_production: {
         NODE_ENV: "production",
@@ -17,7 +17,7 @@ module.exports = {
       name: "appTwo",
       script: "./appTwo/appTwo.js",
       watch: true,
-      node_args: "--inspect=0.0.0.0:6666",
+      node_args: "--inspect",
       exec_mode: "cluster",
     },
     {
@@ -25,7 +25,7 @@ module.exports = {
       script: "./appThree/appThree.js",
       watch: true,
       node_args: "--inspect=0.0.0.0:6667",
-      exec_mode: "cluster",
+      // exec_mode: "cluster",
     },
   ],
 
